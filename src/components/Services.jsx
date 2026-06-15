@@ -39,12 +39,12 @@ export default function Services() {
           <h2 className={`text-2xl sm:text-4xl font-bold text-white mb-4 uppercase tracking-wider transition-all duration-800 ${
             isVisible ? 'animate-fade-in-up' : 'opacity-0'
           }`}>
-            Наши услуги
+            Услуги
           </h2>
           <p className={`text-white/50 max-w-xl mx-auto text-xs sm:text-sm uppercase tracking-widest transition-all duration-800 delay-100 ${
             isVisible ? 'animate-fade-in-up' : 'opacity-0'
           }`}>
-            Предлагаем полный спектр услуг по установке натяжных потолков 
+            Полный спектр услуг по установке натяжных потолков 
             любой сложности
           </p>
         </div>

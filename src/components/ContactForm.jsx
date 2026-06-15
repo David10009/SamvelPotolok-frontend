@@ -85,7 +85,7 @@ export default function ContactForm() {
             <p className={`text-white/50 mb-8 sm:mb-10 leading-relaxed text-xs sm:text-sm uppercase tracking-wider transition-all duration-800 delay-100 ${
               isVisible ? 'animate-fade-in-up' : 'opacity-0'
             }`}>
-              Заполните форму, и наш специалист свяжется с вами в ближайшее время
+              Заполните форму, и мы свяжемся с вами в ближайшее время
               для уточнения деталей и бесплатного замера.
             </p>
 
@@ -98,7 +98,8 @@ export default function ContactForm() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                   </svg>
                 </div>
-                <span className="text-xs sm:text-sm">+7 (999) 123-45-67</span>
+                <span className="text-xs sm:text-sm">+7 (991) 370-62-03</span>
+                <span className="text-xs sm:text-sm">+7 (914) 883-19-99</span>
               </div>
               <div className="flex items-center gap-3 text-white/50 hover:text-white/70 transition-colors">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 border border-white/20 flex items-center justify-center text-white/50 shrink-0">
@@ -107,7 +108,7 @@ export default function ContactForm() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                   </svg>
                 </div>
-                <span className="text-xs sm:text-sm">г. Москва, ул. Строителей, 15</span>
+                <span className="text-xs sm:text-sm">Тут надо будет соц сети указать</span>
               </div>
               <div className="flex items-center gap-3 text-white/50 hover:text-white/70 transition-colors">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 border border-white/20 flex items-center justify-center text-white/50 shrink-0">

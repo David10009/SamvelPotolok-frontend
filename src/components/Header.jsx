@@ -19,13 +19,13 @@ export default function Header() {
               S
             </div>
             <span className="text-base sm:text-lg font-semibold text-white tracking-tight">
-              Samvel<span className="font-light">Site</span>
+              Samvey
             </span>
           </a>
 
           {/* Десктоп навигация */}
           <nav className="hidden md:flex items-center gap-8">
-            {links.map((item) => (
+            {links.map((item) => (  
               <a
                 key={item.label}
                 href={item.href}

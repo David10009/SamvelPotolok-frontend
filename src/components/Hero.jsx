@@ -30,7 +30,7 @@ export default function Hero() {
             isVisible ? 'animate-fade-in-up' : 'opacity-0'
           }`}
         >
-          Идеальные натяжные
+          Доступные натяжные
           <br />
           <span className="font-light italic">
             потолки для вашего дома
@@ -42,8 +42,8 @@ export default function Hero() {
             isVisible ? 'animate-fade-in-up' : 'opacity-0'
           }`}
         >
-          Профессиональный монтаж натяжных потолков. Гарантия качества, 
-          доступные цены, более 500 выполненных проектов.
+          Монтаж натяжных потолков. Гарантия качества, 
+          доступные цены, более 100 выполненных проектов.
         </p>
 
         <div
@@ -71,8 +71,8 @@ export default function Hero() {
           }`}
         >
           {[
-            { value: '500+', label: 'Проектов' },
-            { value: '10 лет', label: 'На рынке' },
+            { value: '100+', label: 'Проектов' },
+            { value: '15 лет', label: 'На рынке' },
             { value: '98%', label: 'Довольных клиентов' },
           ].map((stat) => (
             <div key={stat.label} className="bg-black/80 px-2 py-2 sm:p-4">

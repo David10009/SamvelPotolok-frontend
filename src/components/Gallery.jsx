@@ -181,7 +181,7 @@ export default function Gallery() {
 
         {!loading && works.length === 0 && (
           <div className="text-center text-white/30 text-sm uppercase tracking-widest py-20">
-            Пока нет работ. Добавьте их в админ-панели.
+            Пока нет работ.
           </div>
         )}
 

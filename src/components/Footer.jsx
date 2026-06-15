@@ -45,9 +45,9 @@ export default function Footer() {
               Контакты
             </h4>
             <ul className="space-y-2 text-sm text-white/40">
-              <li>+7 (999) 123-45-67</li>
+              <li>+7 (991) 370-62-03</li>
+              <li>+7 (914) 883-19-99</li>
               <li>info@samvelsite.ru</li>
-              <li>г. Москва, ул. Строителей, 15</li>
             </ul>
           </div>
         </div>
