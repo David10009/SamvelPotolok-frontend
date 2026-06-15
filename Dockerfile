@@ -8,8 +8,10 @@ RUN npm ci
 
 COPY . .
 
-# Убираем VITE_API_URL — в продакшене nginx проксирует запросы
-ENV VITE_API_URL=""
+# VITE_API_URL можно задать при сборке через --build-arg
+# По умолчанию пустая строка — nginx будет проксировать запросы
+ARG VITE_API_URL
+ENV VITE_API_URL=${VITE_API_URL}
 RUN npm run build
 
 # Этап раздачи

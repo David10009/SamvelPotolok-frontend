@@ -3,7 +3,7 @@ import { useReveal } from '../hooks/useReveal';
 import LightLines from './LightLines';
 import Lightbox from './Lightbox';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8002';
+const API_BASE = import.meta.env.VITE_API_URL || '';
 
 function Collage({ item, index, isVisible, onClick }) {
   const { title, subtitle, description, layout, images } = item;
@@ -131,7 +131,6 @@ export default function Gallery() {
   const [lightbox, setLightbox] = useState(null);
 
   useEffect(() => {
-    const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8002';
     fetch(`${API_BASE}/api/works/`)
       .then((res) => res.json())
       .then((data) => {
