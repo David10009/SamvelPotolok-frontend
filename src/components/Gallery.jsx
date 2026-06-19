@@ -32,6 +32,8 @@ function Collage({ item, index, isVisible, onClick }) {
               key={i}
               src={`${API_BASE}${img.url}`}
               alt={`${title} - фото ${i + 1}`}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
             />
           ))}

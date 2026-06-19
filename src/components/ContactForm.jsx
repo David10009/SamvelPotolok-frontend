@@ -21,8 +21,28 @@ export default function ContactForm() {
   const [status, setStatus] = useState('idle');
   const [validationError, setValidationError] = useState(null);
 
+  const validatePhone = (phone) => {
+    // Убираем всё кроме цифр
+    const digits = phone.replace(/\D/g, '');
+    // Российские номера: 11 цифр (8...+7 или 7...+7 или просто 10/11)
+    if (digits.length === 11 && (digits.startsWith('7') || digits.startsWith('8'))) return true;
+    if (digits.length === 10 && digits.startsWith('9')) return true; // 10 цифр без кода страны
+    return false;
+  };
+
+  const formatPhone = (value) => {
+    // Разрешаем только цифры, +, -, пробелы, скобки
+    const cleaned = value.replace(/[^\d+\-() ]/g, '');
+    return cleaned;
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
+    if (name === 'phone') {
+      setFormData((prev) => ({ ...prev, phone: formatPhone(value) }));
+      setValidationError(null);
+      return;
+    }
     setFormData((prev) => ({
       ...prev,
       [name]: name.includes('count') ? (value === '' ? 0 : Math.max(0, parseInt(value) || 0)) : value,
@@ -39,6 +59,11 @@ export default function ContactForm() {
     const cornerVal = Number(formData.corner_count);
     if (cornerVal < 3) {
       setValidationError('Количество углов не может быть меньше 3');
+      return;
+    }
+
+    if (!validatePhone(formData.phone)) {
+      setValidationError('Введите корректный номер телефона (например, +7 999 123 45 67)');
       return;
     }
 
